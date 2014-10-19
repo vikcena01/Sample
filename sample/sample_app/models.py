@@ -19,7 +19,7 @@ class Author(models.Model):
 
 
 class Entry(models.Model):
-    blog = models.ForiegnKey(Blog)
+    blog = models.ForeignKey(Blog)
     headline = models.CharField(max_length=255)
     body_text = models.TextField()
     pub_date = models.DateField()
